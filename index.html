@@ -18,7 +18,7 @@
       model.add(tf.layers.dense({inputShape: [784], units: 128, activation: 'relu'}));
       model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
       model.summary();
-      console.log("Model is created, Check JavaScript runtime environment for more info.");
+      document.writeln("Model is created, Check JavaScript runtime environment for more info.");
   </script>
   
 </body>
