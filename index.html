@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TensorFlow.js</title>
+  
+  <! local tensorflow.js file is downloaded from https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest URL >
+  
+  <script src="tensorflow.js"></script>
+
+</head>
+
+<body>
+    
+  <script>
+      const model = tf.sequential();
+      model.add(tf.layers.dense({inputShape: [784], units: 128, activation: 'relu'}));
+      model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
+      model.summary();
+      model.compile(optimizer="Adam",loss="sparse_categorical_crossentropy",metrics=['accuracy']);
+  </script>
+  
+</body>
+</html>
