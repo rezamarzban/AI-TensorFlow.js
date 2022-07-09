@@ -13,8 +13,8 @@ data.load().then(
         model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
-        model.fit(Xtrain, Ytrain, {epochs: 1});
-      
+        const Tm = model.fit(Xtrain, Ytrain, {epochs: 1});
+        document.writeln("Loss  " + " : " + Tm.history.loss[0]);
     },
     (onRejected) => {
         console.log("mnist data load failed.")
