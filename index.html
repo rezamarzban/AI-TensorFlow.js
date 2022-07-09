@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>TensorFlow.js</title>
-  
-  <! local tensorflow.js file is downloaded from https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest URL >
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TensorFlow.js Tutorial</title>
+
+  <!-- Import TensorFlow.js -->
   <script src="tensorflow.js"></script>
 
 </head>
 
 <body>
     
-  <script>
-      const model = tf.sequential();
-      model.add(tf.layers.dense({inputShape: [784], units: 128, activation: 'relu'}));
-      model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
-      model.summary();
-      model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
-      document.writeln("Model is created, Check JavaScript runtime environment for more info.");
-  </script>
-  
+    <!-- Import the data file -->
+    <script src="mnist.js" type="module"></script>
+    
+    <!-- Import the main script file -->
+    <script src="model.js" type="module"></script>
+
 </body>
 </html>
