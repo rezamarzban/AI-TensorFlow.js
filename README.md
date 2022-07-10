@@ -33,7 +33,7 @@ V2.0.0:
 https://prxoe7.csb.app/
 
 V2.0.0-light:
-
+Same as above, But replace those code lines in the source.
 
 V1.0.0:
 https://w84mri.csb.app/
