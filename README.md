@@ -5,8 +5,8 @@ All of TensorFlow.js examples and demoes in the web are complicated and confusin
 
 See all versions live demo:
 
-V1.1.0:
-https://iqv09j.csb.app/
+V2.0.0:
+
 
 V1.0.0:
 https://w84mri.csb.app/
