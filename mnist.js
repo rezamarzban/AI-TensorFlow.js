@@ -81,5 +81,5 @@ export class MnistData {
 
 }
 
-//@Author: Reza Marzban
-//GitHub.com/marzban2030
+//Author: Reza Marzban
+//GitHub.com/marzban2030/AI-TensorFlow.js
