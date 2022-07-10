@@ -12,7 +12,7 @@ const MNIST_LABELS_PATH =
     './mnist_labels_uint8';
 
 /**
- * A class that fetches the sprited MNIST dataset and convert to ... .
+ * A class that fetches the sprited MNIST dataset and convert to tensors.
  *
  * NOTE: This will get much easier. For now, we do data fetching and
  * manipulation manually.
