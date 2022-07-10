@@ -3,7 +3,7 @@ Simple AI Neural Network by TensorFlow in JavaScript language
 
 All of TensorFlow.js examples and demoes in the web are complicated and confusing, But this project is consist of few codes which make it easy to understanding.
 
-If there is hardware limit in your system such as webGL GPU texture size replace below code in "model.js" file:
+If there is hardware limitations in your system such as webGL GPU texture size limit replace below code in "model.js" file:
 
 const Xtrain = tf.tensor2d(data.trainImages, [55000, 784]);
 
