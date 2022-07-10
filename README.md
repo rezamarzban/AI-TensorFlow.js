@@ -30,7 +30,7 @@ Inorder to reducing GPU hardware consumption.
 See all versions live demo:
 
 V2.0.0:
-
+https://prxoe7.csb.app/
 
 V2.0.0-light:
 
