@@ -13,8 +13,11 @@ data.load().then(
         model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
-        const Tm = model.fit(Xtrain, Ytrain, {epochs: 1});
-        document.writeln("Loss  " + " : " + Tm.history.loss[0]);
+        model.fit(Xtrain, Ytrain, {epochs: 1});
+        model.evaluate(Xtrain, Ytrain);
+        model.save("localstorage://model.json").then(() => {
+        document.write("Neural Network Model saved in local storage as model.jason, Check JavaScript runtime environment and browser local storage for more info.");
+        });
     },
     (onRejected) => {
         console.log("mnist data load failed.")
