@@ -3,7 +3,7 @@ Simple AI Neural Network by TensorFlow in JavaScript language
 
 All of TensorFlow.js examples and demoes in the web are complicated and confusing, But this project is consist of few codes which make it easy to understanding.
 
-Completed project with visual environment is available in my another repository at:
+Complicated full project with visual environment is available in my another repository at:
 https://github.com/marzban2030/TensorFlow.js-vis
 
 If there is hardware resource limitations in your system such as GPU texture size limit to running webGL replace below code lines in "model.js" file:
