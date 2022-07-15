@@ -14,10 +14,10 @@ data.load().then(
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
         //tensorflow.js model.fit() doesn't work, Search it in Google.
-        //This line of code do nothing, I think this is because of some problems due to tensorflow.js, RAM and GPU hardware resource limits.
+        //This line of code from here to flag sign do nothing, I guess this is because of some problems due to tensorflow.js, RAM and GPU hardware resource limits.
         model.fit(Xtrain, Ytrain, {epochs: 10}).then(() => {
         model.evaluate(Xtrain, Ytrain);
-        });
+        }); //flag sign
         model.save("localstorage://model.json").then(() => {
         document.write("Neural Network Model saved in local storage as model.jason, Check JavaScript runtime environment and browser local storage for more info.");
         });
