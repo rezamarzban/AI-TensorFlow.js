@@ -31,4 +31,4 @@ Inorder to reducing GPU hardware resource usage by shortening data tensors.
 
 
 See all demo:
-https://w0g16m.csb.app
+https://ox3hgq.csb.app/
