@@ -14,7 +14,7 @@ data.load().then(
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
         //tensorflow.js model.fit() doesn't work, Search it in Google.
-        //This line of code from here to flag sign do nothing, I guess this is because of some problems due to tensorflow.js, webGL, RAM and GPU hardware resource limits.
+        //This line of code from here to flag sign do nothing in action, I guess this is because of some problems due to tensorflow.js, webGL, RAM and GPU hardware resource limits.
         model.fit(Xtrain, Ytrain, {epochs: 10}).then(() => {
         model.evaluate(Xtrain, Ytrain);
         }); //flag sign
