@@ -32,6 +32,12 @@ Inorder to reducing GPU hardware resource usage by shortening data tensors.
 
 See all versions live demo:
 
+v2.1.0:
+https://w0g16m.csb.app/
+
+v2.1.0-light:
+Same as above, But replace those code lines in the source.
+
 V2.0.0:
 https://prxoe7.csb.app/
 
