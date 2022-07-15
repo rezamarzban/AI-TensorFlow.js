@@ -30,5 +30,5 @@ const Ytest = tf.tensor2d(data.testLabels.slice(0, 10000), [1000, 10]);
 Inorder to reducing GPU hardware resource usage by shortening data tensors.
 
 
-See all demo:
+See live demo:
 https://ox3hgq.csb.app/
