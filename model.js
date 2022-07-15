@@ -17,10 +17,11 @@ data.load().then(
         //This line of code from here to flag sign do nothing in action, I guess this is because of some problems due to tensorflow.js, webGL, RAM and GPU hardware resource limits.
         model.fit(Xtrain, Ytrain, {epochs: 10}).then(() => {
         model.evaluate(Xtrain, Ytrain);
-        }); //flag sign
         model.save("localstorage://model.json").then(() => {
-        document.write("Neural Network Model saved in local storage as model.jason, Check JavaScript runtime environment and browser local storage for more info.");
+        document.write(" ,Training completed. Neural Network Model saved in local storage as model.jason, Check JavaScript runtime environment and browser local storage for more info.");
         });
+        }); //flag sign
+        document.write("Please wait: Training ...");
     },
     (onRejected) => {
         console.log("mnist data load failed.")
