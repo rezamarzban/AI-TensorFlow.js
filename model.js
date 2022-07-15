@@ -14,8 +14,8 @@ data.load().then(
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
         model.fit(Xtrain, Ytrain, {epochs: 10}).then(() => {
-        });
         model.evaluate(Xtrain, Ytrain);
+        });
         model.save("localstorage://model.json").then(() => {
         document.write("Neural Network Model saved in local storage as model.jason, Check JavaScript runtime environment and browser local storage for more info.");
         });
