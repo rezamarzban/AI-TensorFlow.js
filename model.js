@@ -14,7 +14,11 @@ data.load().then(
         model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
-        model.fit(Xtrain, Ytrain, {epochs: 10}).then(() => {
+        model.fit(Xtrain, Ytrain, {epochs: 10, callbacks: {onEpochEnd: (epoch, logs) => {
+            document.write(JSON.stringify(epoch)+": ");
+            document.write(JSON.stringify(logs)+" <br>");
+        }}}).then(history => {
+            document.write(JSON.stringify(history)+" <br>");
             model.evaluate(Xtrain, Ytrain);
             model.save("localstorage://model.json").then(() => {
                 document.write("Training completed. Neural Network Model saved in browser local storage as model.jason file, Check JavaScript runtime environment for more info.");
