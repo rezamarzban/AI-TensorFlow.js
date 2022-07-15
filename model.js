@@ -15,16 +15,16 @@ data.load().then(
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
         model.fit(Xtrain, Ytrain, {epochs: 10, callbacks: {onEpochEnd: (epoch, logs) => {
-            document.write(JSON.stringify(epoch)+": ");
+            document.write("Epoch " + epoch + ": ");
             document.write(JSON.stringify(logs)+" <br>");
         }}}).then(history => {
-            document.write(JSON.stringify(history)+" <br>");
+            document.write("<br>Trained model loss, accuracy = " + history.history.loss[9] + ", " + history.history.acc[9] + "<br>");
             model.evaluate(Xtrain, Ytrain);
             model.save("localstorage://model.json").then(() => {
                 document.write("Training completed. Neural Network Model saved in browser local storage as model.jason file, Check JavaScript runtime environment for more info.");
             });
         });
-        document.write("Please wait: Training ... <br>");
+        document.write("Please wait: Training the Neural Network model ... <br>");
     },
     (onRejected) => {
         console.log("MNIST dataset loading failed.")
