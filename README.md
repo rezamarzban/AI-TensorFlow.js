@@ -43,3 +43,13 @@ Please pay attention that some browsers don't handle "localstorage://" handler v
 
 If you want to check your browser localstorage stored keys and datas navigate your browser to this URL:²
 https://780pix.csb.app/
+
+Footnotes:
+1: AI Hand Written Digit Recognition from your draw with mouse or finger touch on screen using TensorFlow.js:
+
+https://github.com/marzban2030/AI-TensorFlow.js-draw
+
+
+2: JavaScript to listing browser localstorage keys and datas:
+
+https://github.com/marzban2030/Browser-localstorage
