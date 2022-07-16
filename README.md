@@ -29,3 +29,6 @@ const Ytest = tf.tensor2d(data.testLabels, [10000, 10]);
 
 See live demo:
 https://514m9l.csb.app/
+
+
+![image]https://github.com/marzban2030/AI-TensorFlow.js/raw/main/AfterSuccessfulRun.jpg
