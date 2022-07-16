@@ -42,4 +42,4 @@ https://r54tve.csb.app/
 Please pay attention that some browsers don't handle "localstorage://" handler via JavaScript codes properly, Test above scripts in various browsers at same time to taking correct result.
 
 If you want to check your browser localstorage stored keys and datas navigate your browser to this URL:
-https://r54tve.csb.app/
+https://780pix.csb.app/
