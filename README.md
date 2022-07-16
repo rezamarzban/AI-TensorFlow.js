@@ -38,3 +38,5 @@ After successful run you will see something like as this. It will take about 3 m
 
 After running above script to predicting handwritten digits from your drawing with mouse or finger touch on screen navigate your browser to this link and when prompt model URL enter "localstorage://model.json" and click "OK" button to loading model which is saved to browser localstorage by above script:
 https://r54tve.csb.app/
+
+Please pay attention that some browsers don't handle "localstorage://" handler properly, Test above scripts in various browsers at same time to taking correct result.
