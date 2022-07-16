@@ -31,4 +31,6 @@ See live demo:
 https://514m9l.csb.app/
 
 
+After successful run you will see something like as this. It will take about 3 minutes to be completed:
+
 ![image](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/AfterSuccessfulRun.jpg)
