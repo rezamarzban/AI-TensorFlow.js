@@ -34,3 +34,7 @@ https://514m9l.csb.app/
 After successful run you will see something like as this. It will take about 3 minutes to be completed:
 
 ![image](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/AfterSuccessfulRun.jpg)
+
+
+After running above script to predicting handwritten digits from your drawing with mouse or finger touch on screen navigate your browser to this link and when prompt model URL enter "localstorage://model.json" and click "OK" button to loading model which is saved to browser localstorage by above script:
+https://r54tve.csb.app/
