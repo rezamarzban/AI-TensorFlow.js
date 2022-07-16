@@ -45,6 +45,7 @@ If you want to check your browser localstorage stored keys and datas navigate yo
 https://780pix.csb.app/
 
 Footnotes:
+
 1: AI Hand Written Digit Recognition from your draw with mouse or finger touch on screen using TensorFlow.js:
 
 https://github.com/marzban2030/AI-TensorFlow.js-draw
