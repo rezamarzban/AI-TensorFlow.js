@@ -28,7 +28,7 @@ const Ytest = tf.tensor2d(data.testLabels, [10000, 10]);
 
 
 See live demo:
-https://514m9l.csb.app/
+https://flifvw.csb.app/
 
 
 After successful run you will see something like as this. It will take about 3 minutes to be completed:
@@ -37,6 +37,7 @@ After successful run you will see something like as this. It will take about 3 m
 
 
 After running above script, To predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL¹:
+https://flifvw.csb.app/test/
 
 ![image2](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Test.jpg)
 
