@@ -24,7 +24,7 @@ data.load().then(
             document.write("<br>Trained model loss, accuracy = " + history.history.loss[4] + ", " + history.history.acc[4] + "<br>");
             //model.evaluate(Xtrain, Ytrain);
             model.save("localstorage://model.json").then(() => {
-                document.write("<br> Neural Network Model saved in browser local storage as model.json file, Check JavaScript runtime environment for more info.");
+                document.write('<br> Neural Network Model saved in browser local storage as model.json file, Click <a href="./test/index.html">here</a> to testing it with your handwritten digits.');
             });
         });
         document.write("Please wait: Training the Neural Network model ... <br>");
