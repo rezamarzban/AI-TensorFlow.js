@@ -6,7 +6,7 @@ All of TensorFlow.js examples and demoes in the web are complicated and confusin
 Complicated full project with visual environment is available in my another repository at:
 https://github.com/marzban2030/TensorFlow.js-vis
 
-Because of hardware resource limits in most of common systems such as GPU texture size limit to running webGL, I put below code lines in "model.js" file inorder to reducing GPU hardware resource usage by shortening training and testing data tensors to under 10% of their length:
+Because of hardware resource limits in most common systems such as GPU texture size limit to running webGL, I put below code lines in "model.js" file inorder to reducing GPU hardware resource usage by shortening training and testing data tensors to under 10% of their length:
 
 const Xtrain = tf.tensor4d(data.trainImages.slice(0, 3920000), [5000, 28, 28, 1]);
 
@@ -36,8 +36,8 @@ After successful run you will see something like as this. It will take about 3 m
 ![image](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/AfterSuccessfulRun.jpg)
 
 
-After running above script, To predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL¹ and when prompt model URL, Enter "localstorage://model.json" and click "OK" button to loading model which is saved to browser localstorage by above script:
-https://r54tve.csb.app/
+After running above script, To predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL¹:
+https://r54tve.csb.app/ , Then enter "localstorage://model.json" when prompt and click "OK" button to loading model which is saved to browser localstorage by above script.
 
 Please pay attention that some browsers doesn't handle "localstorage://" handling via JavaScript codes properly, Test above scripts in various browsers at same time to taking correct result. Here is list of compatible browsers from https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage that support localStorage:
 
