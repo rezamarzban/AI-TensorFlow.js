@@ -39,21 +39,9 @@ After successful run you will see something like as this. It will take about 3 m
 After running above script, To predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL¹:
 https://r54tve.csb.app/ , Then enter "localstorage://model.json" when prompt and click "OK" button to loading model which is saved to browser localstorage by above script.
 
-Please pay attention that some browsers doesn't handle "localstorage://" handling via JavaScript codes properly, Test above scripts in various browsers at same time to taking correct result. Here is list of compatible browsers from https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage that support localStorage:
-
-![image2](https://github.com/marzban2030/Browser-localstorage/raw/main/localStorageBrowsers.jpg)
-
-
-If you want to check your browser localstorage stored keys and datas navigate your browser to this URL:²
-https://780pix.csb.app/
 
 Footnotes:
 
 1: AI Hand Written Digit Recognition from your draw with mouse or finger touch on screen using TensorFlow.js:
 
 https://github.com/marzban2030/AI-TensorFlow.js-draw
-
-
-2: JavaScript to listing browser localstorage keys and datas:
-
-https://github.com/marzban2030/Browser-localstorage
