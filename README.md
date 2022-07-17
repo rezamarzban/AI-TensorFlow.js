@@ -40,10 +40,3 @@ After running above script, To predicting handwritten digits from your drawing w
 https://flifvw.csb.app/test/
 
 ![image2](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Test.jpg)
-
-
-Footnotes:
-
-1: AI Hand Written Digit Recognition from your draw with mouse or finger touch on screen using TensorFlow.js:
-
-https://github.com/marzban2030/AI-TensorFlow.js-draw
