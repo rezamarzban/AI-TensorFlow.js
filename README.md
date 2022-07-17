@@ -16,7 +16,7 @@ const Xtest = tf.tensor4d(data.testImages.slice(0, 784000), [1000, 28, 28, 1]);
 
 const Ytest = tf.tensor2d(data.testLabels.slice(0, 10000), [1000, 10]);
 
-If your system hardwares are very strong you can change above codes in "model.js" file to below codes inorder to running with full of training and testing data tensors length:
+If your system hardwares are very strong you can change above codes in "model.js" file to below codes inorder to running with full length of training and testing data tensors:
 
 const Xtrain = tf.tensor4d(data.trainImages, [55000, 28, 28, 1]);
 
