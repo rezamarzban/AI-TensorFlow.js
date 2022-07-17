@@ -36,7 +36,7 @@ After successful run you will see something like as this. It will take about 3 m
 ![image1](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Run.jpg)
 
 
-After running above script, To predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL:
-https://flifvw.csb.app/test/
+After running above script once time, Everytime that you want to predicting handwritten digits from your drawing with mouse or finger touch on screen, Navigate your browser to this URL:
+https://flifvw.csb.app/test/index.html
 
 ![image2](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Test.jpg)
