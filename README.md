@@ -41,5 +41,7 @@ https://flifvw.csb.app/test/index.html
 
 ![image2](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Test.jpg)
 
-Increase epochs number in "model.js" file for more accuracy, Live demo:
+Increase epochs number in the "model.js" file for more accuracy, Live demo:
 https://fhgqyp.csb.app/
+
+Also to taking maximum accuracy you can run at full length of training and testing data tensors, But it need hours time and very strong hardwares that process to be completed.
