@@ -44,4 +44,4 @@ https://flifvw.csb.app/test/index.html
 Increase epochs number in the "model.js" file for more accuracy, Live demo:
 https://fhgqyp.csb.app/
 
-Also to taking maximum accuracy you can run at full length of training and testing data tensors, But it need hours time and very strong hardwares that process to be completed.
+Also to taking maximum accuracy you can run at full length of training and testing data tensors, But it need hours time and very strong hardwares to be completed.
