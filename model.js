@@ -9,6 +9,7 @@ data.load().then(
         const Ytrain = tf.tensor2d(data.trainLabels.slice(0, 50000), [5000, 10]);
         const Xtest = tf.tensor4d(data.testImages.slice(0, 784000), [1000, 28, 28, 1]);
         const Ytest = tf.tensor2d(data.testLabels.slice(0, 10000), [1000, 10]);
+        constant epochsNum = 10;
         const model = tf.sequential();
         model.add(tf.layers.conv2d({filters: 16, kernelSize: [3, 3], activation: 'relu', padding: 'same', inputShape: [28, 28, 1]}));
         model.add(tf.layers.maxPooling2d({pool_size: [2, 2]}));
@@ -17,11 +18,11 @@ data.load().then(
         model.add(tf.layers.dense({units: 10, activation: 'softmax'}));
         model.summary();
         model.compile({optimizer: 'adam', loss: 'categoricalCrossentropy', metrics: ['accuracy'], });
-        model.fit(Xtrain, Ytrain, {epochs: 5, callbacks: {onEpochEnd: (epoch, logs) => {
+        model.fit(Xtrain, Ytrain, {epochs: epochsNum, callbacks: {onEpochEnd: (epoch, logs) => {
             document.write("Epoch " + (epoch+1) + ": ");
             document.write(JSON.stringify(logs)+" <br>");
         }}}).then(history => {
-            document.write("<br>Trained model loss, accuracy = " + history.history.loss[4] + ", " + history.history.acc[4] + "<br>");
+            document.write("<br>Trained model loss, accuracy = " + history.history.loss[epochsNum-1] + ", " + history.history.acc[epochsNum-1] + "<br>");
             //model.evaluate(Xtrain, Ytrain);
             model.save("localstorage://model.json").then(() => {
                 document.write('<br> Neural Network Model saved in browser local storage as model.json file, Click <a href="./test/index.html">here</a> to testing it with your handwritten digits.');
