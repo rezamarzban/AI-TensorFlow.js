@@ -41,4 +41,5 @@ https://flifvw.csb.app/test/index.html
 
 ![image2](https://github.com/marzban2030/AI-TensorFlow.js/raw/main/Test.jpg)
 
-Increase epochs number in "model.js" file for more accuracy.
+Increase epochs number in "model.js" file for more accuracy, Live demo:
+https://fhgqyp.csb.app/
