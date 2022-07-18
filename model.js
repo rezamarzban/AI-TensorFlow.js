@@ -9,7 +9,7 @@ data.load().then(
         const Ytrain = tf.tensor2d(data.trainLabels.slice(0, 50000), [5000, 10]);
         const Xtest = tf.tensor4d(data.testImages.slice(0, 784000), [1000, 28, 28, 1]);
         const Ytest = tf.tensor2d(data.testLabels.slice(0, 10000), [1000, 10]);
-        constant epochsNum = 10;
+        const epochsNum = 10;
         const model = tf.sequential();
         model.add(tf.layers.conv2d({filters: 16, kernelSize: [3, 3], activation: 'relu', padding: 'same', inputShape: [28, 28, 1]}));
         model.add(tf.layers.maxPooling2d({pool_size: [2, 2]}));
