@@ -1,5 +1,5 @@
 # AI-TensorFlow.js
-Simple AI Neural Network by TensorFlow in JavaScript language 
+It is most simple AI Neural Network by TensorFlow in JavaScript language with few codes and components.
 
 All of TensorFlow.js examples and demoes in the web are complicated and confusing, But this project is consist of compact few codes especially at its core, "model.js" file which make it easy to understanding.
 
